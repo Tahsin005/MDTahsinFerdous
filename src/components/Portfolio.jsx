@@ -17,8 +17,8 @@ const projects = [
     description:
       "This is a front-end project with tailwind css and daisy ui to practice responsive layout design.",
     links: {
-      site: "",
-      github: "",
+      site: "https://daisy-man.vercel.app/",
+      github: "https://github.com/Tahsin005/DaisyMan",
     },
   },
   {
@@ -27,8 +27,8 @@ const projects = [
     description:
       "This is a simple multipage restaurant management system design using HTML, CSS, Tailwind CSS and some JavaScript for scrolling functionality.",
     links: {
-      site: "",
-      github: "",
+      site: "https://gourmet-haven-eight.vercel.app/",
+      github: "https://github.com/Tahsin005/Gourmet-Haven",
     },
   },
   {
@@ -37,8 +37,8 @@ const projects = [
     description:
       "This is a recipe finder website created using the classic 'Meal DB'.",
     links: {
-      site: "",
-      github: "",
+      site: "https://recipe-app-gamma-virid.vercel.app/",
+      github: "https://github.com/Tahsin005/Recipe-App",
     },
   },
   {
@@ -47,8 +47,8 @@ const projects = [
     description:
       "This is a Library management system where a user can buy books and leave reviews for them.",
     links: {
-      site: "",
-      github: "",
+      site: "https://boi-poka.onrender.com/",
+      github: "https://github.com/Tahsin005/Boi-Poka",
     },
   },
   {
@@ -57,8 +57,8 @@ const projects = [
     description:
       "Lifted & Listed: Buy and sell easily. List, manage, edit, or delete items. Connect with buyers, track sales, and update your account. Secure email verification ensures safety.",
     links: {
-      site: "",
-      github: "",
+      site: "https://lifted-and-listed.netlify.app/",
+      github: "https://github.com/Tahsin005/Lifted-Listed-Frontend",
     },
   },
   {
@@ -67,8 +67,8 @@ const projects = [
     description:
       "A pet adoption website where an user can adopt pet and list pet for adoption.",
     links: {
-      site: "",
-      github: "",
+      site: "https://fur-ever-friends-chi.vercel.app/index.html",
+      github: "https://github.com/Tahsin005/Fur_ever_friends",
     },
   },
 ];
@@ -115,13 +115,16 @@ const Portfolio = () => {
                 href={project.links.site}
                 className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
                                         transition duration-300"
+                                        target="_blank"
               >
+                
                 View Site
               </a>
               <a
                 href={project.links.github}
                 className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
                                         transition duration-300"
+                                        target="_blank"
               >
                 <AiFillGithub className=""/>
               </a>

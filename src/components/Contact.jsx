@@ -1,16 +1,15 @@
 import React from 'react';
-
+import { FaLocationDot } from "react-icons/fa6";
 const Contact = () => {
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10' id='contact'>
             
             <div className='grid lg:grid-cols-2 place-items-center'>
                 <div>
-                    <div className='text-gray-300 my-3'>
+                    <div className='text-gray-300 my-3' id='about'>
                         <h3 className='text-4xl font-semibold mb-5'>About <span>Me</span></h3>
                         <p className='text-justify leading-7 w-11/12 mx-auto'>I am a 3rd-year Computer Science and Engineering student at City University in Dhaka, Bangladesh. I am passionate about technology and problem-solving, and I enjoy <span>speedcubing</span> in my free time.</p>
                     </div>
-
                     <div className="flex mt-10 items-center gap-7">
                         <div className="bg-gray-800/40 p-4 rounded-lg">
                             <h3 className="md:text-4xl text-2xl font-semibold text-white">1100

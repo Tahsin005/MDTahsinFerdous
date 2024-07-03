@@ -1,5 +1,6 @@
 import React from "react";
 import profilepic from "../assets/tahsin-hero.png";
+import resume from "../assets/resume/MD. Tahsin Ferdous Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -88,19 +89,19 @@ const Hero = () => {
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
                                        border-purple-400 rounded-xl"
             >
-              <a href="../assets/resume/MD. Tahsin Ferdous Resume.pdf" download>Download Resume!</a>
+              <a href={resume} download='resume'>Download Resume!</a>
             </motion.button>
 
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Tahsin005" target="_blank">
                 <AiOutlineGithub />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/md-tahsin-ferdous/" target="_blank">
                 <AiOutlineLinkedin />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a whileHover={{ scale: 1.2 }} href="mailto: tahsin.ferdous@gmail.com" target="_blank" >
                 <AiOutlineMail />
               </motion.a>
             </div>
