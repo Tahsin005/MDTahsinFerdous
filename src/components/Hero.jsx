@@ -26,13 +26,14 @@ import SkillsGrid from "./SkillGrid";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto lg:mx-[222px] relative">
+    <div className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 pt-12 pb-5 mt-16 mb-10 relative">
       <div className="grid lg:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
+          className=""
         >
           <TypeAnimation
             sequence={[
@@ -45,7 +46,7 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-400 text-xl md:text-4xl italic- mb-4"
+            className="font-bold text-gray-400 text-xl md:text-4xl  mb-4"
           />
 
           <motion.p
@@ -64,7 +65,7 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
+            className="text-gray-300 md:text-2xl text-lg mb-6"
           >
             A Computer Science and Engineering major, passionate about full-stack web development. I use Django for backend APIs and HTML, CSS, Tailwind CSS, JavaScript and React for frontend to build scalable web applications.
             <br />
@@ -106,6 +107,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
+        <motion.div className="sm:mx-auto lg:ms-auto">
         <motion.img
           src={profilepic}
           className="w-[300px] md:w-[450px] bg-[#2f133b] rounded-full"
@@ -114,6 +116,7 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         />
+        </motion.div>
       </div>
 
       <motion.div
@@ -125,7 +128,7 @@ const Hero = () => {
       >
         <div className="text-gray-200 text-4xl text-center">Tech Stack</div>
         
-        <div className="mt-8">
+        <div className="mt-8 ">
             <SkillsGrid></SkillsGrid>
         </div>
       </motion.div>

@@ -10,7 +10,7 @@ import githubicon from '../assets/icons8-github.svg'
 
 const SkillsGrid = () => {
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-5 gap-12" >
+    <div className="grid grid-cols-3 sm:grid-cols-5 gap-16 " >
       {/* HTML */}
       <div className="flex flex-col items-center gap-2">
         <img src={htmlicon} type="image/svg+xml" alt="html icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />

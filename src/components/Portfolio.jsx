@@ -75,7 +75,7 @@ const projects = [
 const Portfolio = () => {
   console.log(projects);
   return (
-    <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
+    <div className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10" id="portfolio">
       <h2 className="text-3xl font-bold text-gray-200 mb-16 text-center">
         Projects
       </h2>
@@ -83,7 +83,7 @@ const Portfolio = () => {
       <Reveal key={index}>
         <div
           key={index}
-          className={`flex flex-col md:flex-row ${
+          className={`flex flex-col gap-8 md:flex-row ${
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
           } mb-12`}
         >
@@ -97,7 +97,7 @@ const Portfolio = () => {
                 </div>
           </div> */}
           <div className="mockup-window w-full h-full object-cover shadow-lg rounded-xl bg-[#F4C531] mx-auto featured-project-img-01">
-            <div className="featured-project-img-01-div cursor-all-scroll  overflow-scroll h-[350px]  rounded-xl">
+            <div className="featured-project-img-01-div cursor-all-scroll  overflow-scroll h-[330px]  rounded-xl">
               <div className=" transition-all duration-500">
                 <img src={project.img} alt={project.title} className="" />
               </div>

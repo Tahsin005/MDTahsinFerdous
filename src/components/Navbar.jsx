@@ -32,8 +32,8 @@ const Navbar = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50'>
-        <div className='max-w-[1300px] mx-auto  flex justify-between text-gray-200
-        text-xl items-center px-12 h-20'>
+        <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 mt-12 flex justify-between text-gray-200
+        text-xl items-center '>
 
             <a href="#">MD. Tahsin Ferdous</a>
 
