@@ -67,7 +67,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 md:text-2xl text-lg mb-6"
           >
-            A Computer Science and Engineering major, passionate about full-stack web development. I use Django for backend APIs and HTML, CSS, Tailwind CSS, JavaScript and React for frontend to build scalable web applications.
+            A Computer Science and Engineering major, passionate about full-stack web development. Using Django for backend APIs and HTML, CSS, Tailwind CSS, JavaScript and React for frontend to build scalable web applications.
             <br />
             <span className="font-bold text-purple-500">Open for Work &
             Collaboration.</span>
@@ -126,7 +126,9 @@ const Hero = () => {
         transition={{ duration: 1, delay: 1 }}
         className="text-7xl px-12 md:px-0 w-full mx-auto py-24"
       >
-        <div className="text-gray-200 text-4xl text-center">Tech Stack</div>
+        <h2 className="text-3xl font-bold text-gray-200 mb-16 text-center">
+        Tech Stack
+      </h2>
         
         <div className="mt-8 ">
             <SkillsGrid></SkillsGrid>
