@@ -13,55 +13,55 @@ const SkillsGrid = () => {
     <div className="grid grid-cols-3 sm:grid-cols-5 gap-12" >
       {/* HTML */}
       <div className="flex flex-col items-center gap-2">
-        <img src={htmlicon} type="image/svg+xml" alt="html icon" className="w-20 h-20" />
+        <img src={htmlicon} type="image/svg+xml" alt="html icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc]">HTML</p>
       </div>
 
       {/* CSS */}
       <div className="flex flex-col items-center gap-2">
-        <img src={cssicon} alt="css icon" className="w-20 h-20" />
+        <img src={cssicon} alt="css icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc]">CSS</p>
       </div>
 
       {/* Tailwind CSS */}
       <div className="flex flex-col items-center gap-2">
-        <img src={tailwindcssicon} alt="tailwind css icon" className="w-20 h-20" />
+        <img src={tailwindcssicon} alt="tailwind css icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">Tailwind CSS</p>
       </div>
 
       {/* JavaScript */}
       <div className="flex flex-col items-center gap-2">
-        <img src={jsicon} alt="js icon" className="w-20 h-20" />
+        <img src={jsicon} alt="js icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">JavaScript</p>
       </div>
 
       {/* Python */}
       <div className="flex flex-col items-center gap-2">
-        <img src={pythonicon} alt="py icon" className="w-20 h-20" />
+        <img src={pythonicon} alt="py icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">Python</p>
       </div>
 
       {/* C */}
       <div className="flex flex-col items-center gap-2">
-        <img src={cicon} alt="c icon" className="w-20 h-20" />
+        <img src={cicon} alt="c icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">C</p>
       </div>
 
       {/* C++ */}
       <div className="flex flex-col items-center gap-2">
-        <img src={cppicon} alt="c++" className="w-20 h-20" />
+        <img src={cppicon} alt="c++" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">C++</p>
       </div>
 
       {/* django */}
       <div className="flex flex-col items-center gap-2">
-        <img src={djangoicon} alt="django" className="w-20 h-20" />
+        <img src={djangoicon} alt="django" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">Django</p>
       </div>
 
       {/* Github */}
       <div className="flex flex-col items-center gap-2">
-        <img src={githubicon} alt="Github" className="bg-white rounded-full w-20 h-20" />
+        <img src={githubicon} alt="Github" className="bg-white rounded-full w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">Github</p>
       </div>
     </div>

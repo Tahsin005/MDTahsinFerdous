@@ -108,13 +108,11 @@ const Hero = () => {
 
         <motion.img
           src={profilepic}
-          className="w-[300px] md:w-[450px]"
+          className="w-[300px] md:w-[450px] bg-[#2f133b] rounded-full"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="bg-[#2f133b] rounded-full"
-          
         />
       </div>
 
@@ -122,7 +120,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 1, delay: 1 }}
         className="text-7xl px-12 md:px-0 w-full mx-auto py-24"
       >
         <div className="text-gray-200 text-4xl text-center">Tech Stack</div>
