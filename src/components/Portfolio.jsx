@@ -55,7 +55,7 @@ const projects = [
     img: liftedlisted,
     title: "Lifted & Listed",
     description:
-      "Lifted & Listed is a vibrant e-commerce platform where users can buy and sell products easily. List your items for sale, manage your listings, and connect with buyers. Edit or delete your products, track your purchases and sales, and update your account details anytime. Secure email verification ensures a safe experience.",
+      "Lifted & Listed: Buy and sell easily. List, manage, edit, or delete items. Connect with buyers, track sales, and update your account. Secure email verification ensures safety.",
     links: {
       site: "",
       github: "",
@@ -87,26 +87,29 @@ const Portfolio = () => {
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
           } mb-12`}
         >
-          {/* <div className='w-full md:w-1/2 p-4'>
+          {/* <div className="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[350px] rounded-xl">
+          <div className=' featured-project-img-01 transition-all duration-500 '>
                     <img
                         src={project.img}
                         alt={project.title}
                         className='w-full h-full object-cover rounded-lg shadow-lg'
                     />
-                </div> */}
-          <div className="mockup-window sm:w-1/2 h-[300px] order-2 sm:order-none rounded-xl">
-            <div className="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px]  rounded-xl">
-              <div className="featured-project-img-01 transition-all duration-500">
+                </div>
+          </div> */}
+          <div className="mockup-window w-full h-full object-cover shadow-lg rounded-xl bg-[#F4C531] mx-auto featured-project-img-01">
+            <div className="featured-project-img-01-div cursor-all-scroll  overflow-scroll h-[350px]  rounded-xl">
+              <div className=" transition-all duration-500">
                 <img src={project.img} alt={project.title} className="" />
               </div>
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+          <div className=" w-full md:w-2/3 p-4 flex flex-col justify-evenly">
             <h3 className="text-2xl font-semibold text-gray-200 mb-4">
               {project.title}
             </h3>
             <p className="text-gray-300 mb-4">{project.description}</p>
+            <span className="text-[] font-medium my-4">This Site is Fully Responsive</span>
             <div className="flex space-x-4">
               <a
                 href={project.links.site}
@@ -120,7 +123,7 @@ const Portfolio = () => {
                 className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
                                         transition duration-300"
               >
-                <AiFillGithub />
+                <AiFillGithub className=""/>
               </a>
             </div>
           </div>
