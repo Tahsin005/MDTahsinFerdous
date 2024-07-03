@@ -108,15 +108,16 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div className="sm:mx-auto lg:ms-auto">
-        <motion.img
-          src={profilepic}
-          className="w-[300px] md:w-[450px] bg-[#2f133b] rounded-full"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        />
+        <motion.div className="sm:mx-auto lg:ms-auto"
+        >
+            <motion.img
+            src={profilepic}
+            className="w-[300px] md:w-[450px] bg-[#2f133b] rounded-full"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            />
         </motion.div>
       </div>
 

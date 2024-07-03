@@ -4,11 +4,11 @@ import recipeapp from "../assets/recipe-app-gamma-virid.vercel.app_.png";
 import boipoka from "../assets/boi-poka.onrender.com_.png";
 import liftedlisted from "../assets/lifted-and-listed.netlify.app_.png";
 import fureverfriends from "../assets/fur-ever-friends-chi.vercel.app_index.html.png";
+import phhero from "../assets/ph-tube-alpha.vercel.app_.png"
 import shophero from "../assets/shop-hero-liart.vercel.app_.png";
 import jokegenerator from "../assets/random-joke-generator-ivory.vercel.app_.png";
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
-
 import "./Portfolio.css";
 const projects = [
   {
@@ -20,6 +20,7 @@ const projects = [
       site: "https://daisy-man.vercel.app/",
       github: "https://github.com/Tahsin005/DaisyMan",
     },
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Daisy-Ui']
   },
   {
     img: gourmethaven,
@@ -30,6 +31,7 @@ const projects = [
       site: "https://gourmet-haven-eight.vercel.app/",
       github: "https://github.com/Tahsin005/Gourmet-Haven",
     },
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Daisy-Ui']
   },
   {
     img: recipeapp,
@@ -40,6 +42,7 @@ const projects = [
       site: "https://recipe-app-gamma-virid.vercel.app/",
       github: "https://github.com/Tahsin005/Recipe-App",
     },
+    technologies: ['HTML', 'CSS', 'JavaScript']
   },
   {
     img: boipoka,
@@ -50,6 +53,7 @@ const projects = [
       site: "https://boi-poka.onrender.com/",
       github: "https://github.com/Tahsin005/Boi-Poka",
     },
+    technologies: ['HTML', 'Tailwind CSS', 'Python', 'Django MVT']
   },
   {
     img: liftedlisted,
@@ -60,6 +64,8 @@ const projects = [
       site: "https://lifted-and-listed.netlify.app/",
       github: "https://github.com/Tahsin005/Lifted-Listed-Frontend",
     },
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST']
+
   },
   {
     img: fureverfriends,
@@ -70,6 +76,8 @@ const projects = [
       site: "https://fur-ever-friends-chi.vercel.app/index.html",
       github: "https://github.com/Tahsin005/Fur_ever_friends",
     },
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST']
+
   },
 ];
 const Portfolio = () => {
@@ -109,7 +117,16 @@ const Portfolio = () => {
               {project.title}
             </h3>
             <p className="text-gray-300 mb-4">{project.description}</p>
-            <span className="text-[] font-medium my-4">This Site is Fully Responsive</span>
+            <ul>
+            {
+                project.technologies.map((tech, i) => (
+                  <li key={i} className="inline-block text-purple-600 px-3 py-1 rounded-full font-semibold">
+                    {tech}
+                  </li>
+                ))
+            }
+            </ul>
+            <p className="text-gray-300 font-medium my-4">This Site is Fully Responsive</p>
             <div className="flex space-x-4">
               <a
                 href={project.links.site}
