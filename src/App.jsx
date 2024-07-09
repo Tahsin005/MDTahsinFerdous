@@ -1,3 +1,4 @@
+import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -10,6 +11,7 @@ export default function APP () {
     <Navbar></Navbar>
     <Hero></Hero>
     <Portfolio></Portfolio>
+    <Blogs></Blogs>
     <Contact></Contact>
     <Footer></Footer>
     </>
