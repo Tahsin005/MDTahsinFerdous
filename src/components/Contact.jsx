@@ -55,7 +55,7 @@ const Contact = () => {
                     placeholder="Your Email ..."
                     name="email"
                     className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
-                    />
+                    />npm
                     <textarea
                     name="textarea"
                     id="textarea"

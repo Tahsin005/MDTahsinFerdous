@@ -4,9 +4,7 @@ import recipeapp from "../assets/recipe-app-gamma-virid.vercel.app_.png";
 import boipoka from "../assets/boi-poka.onrender.com_.png";
 import liftedlisted from "../assets/lifted-and-listed.netlify.app_.png";
 import fureverfriends from "../assets/fur-ever-friends-chi.vercel.app_index.html.png";
-import phhero from "../assets/ph-tube-alpha.vercel.app_.png"
-import shophero from "../assets/shop-hero-liart.vercel.app_.png";
-import jokegenerator from "../assets/random-joke-generator-ivory.vercel.app_.png";
+import aroundtheworld from "../assets/aroundtheworldd.png"
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 import "./Portfolio.css";
@@ -77,6 +75,18 @@ const projects = [
       github: "https://github.com/Tahsin005/Fur_ever_friends",
     },
     technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST']
+
+  },
+  {
+    img: aroundtheworld,
+    title: "Around the world",
+    description:
+      "Rest Countries API Project This project is a React.js application that utilizes the Rest Countries API to display information about all the countries in the world.",
+    links: {
+      site: "https://country-rest-api-react.vercel.app/",
+      github: "https://github.com/Tahsin005/Country-Rest-API---React",
+    },
+    technologies: ['JSX', 'CSS', 'Tailwind CSS', 'React.js', 'REST API']
 
   },
 ];
