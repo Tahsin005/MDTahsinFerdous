@@ -79,7 +79,7 @@ const projects = [
   },
   {
     img: aroundtheworld,
-    title: "Around the world",
+    title: "Around the flag",
     description:
       "Rest Countries API Project This project is a React.js application that utilizes the Rest Countries API to display information about all the countries in the world.",
     links: {
