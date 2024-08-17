@@ -7,6 +7,7 @@ import cicon from '../assets/icons8-c.svg'
 import cppicon from '../assets/icons8-c (1).svg'
 import djangoicon from '../assets/icons8-django.svg'
 import githubicon from '../assets/icons8-github.svg'
+import reacticon from '../assets/react.svg'
 
 const SkillsGrid = () => {
   return (
@@ -33,6 +34,12 @@ const SkillsGrid = () => {
       <div className="flex flex-col items-center gap-2">
         <img src={jsicon} alt="js icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
         <p className="font-semibold text-[#cccccc] text-center">JavaScript</p>
+      </div>
+
+      {/* React */}
+      <div className="flex flex-col items-center gap-2">
+        <img src={reacticon} alt="js icon" className="w-20 h-20 transform transition-transform duration-300 hover:scale-110" />
+        <p className="font-semibold text-[#cccccc] text-center">React</p>
       </div>
 
       {/* Python */}
