@@ -1,9 +1,38 @@
 import React from 'react';
+import Swal from 'sweetalert2'
 import { FaLocationDot } from "react-icons/fa6";
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "4e7c7bba-bebc-42f8-92dd-2f4af39ba2a5");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: "Success!",
+                text: "Message Sent Successfully!",
+                icon: "success"
+              });
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10' id='contact'>
-            
+
             <div className='grid lg:grid-cols-2 place-items-center'>
                 <div>
                     <div className='text-gray-300 my-3' id='about'>
@@ -38,9 +67,9 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form action="https://getform.io/f/wbrkkvea" method='POST' className='max-w-screen-xl p-5 md:p-12' id='form'>
-                <p className="text-gray-100 font-bold text-xl mb-2">
-                    Let´s connect!
+                <form onSubmit={onSubmit} className='max-w-screen-xl p-5 md:p-12' id='form'>
+                    <p className="text-gray-100 font-bold text-xl mb-2">
+                        Let´s connect!
                     </p>
                     <input
                         type="text"
@@ -50,25 +79,25 @@ const Contact = () => {
                         className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
                     />
                     <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email ..."
-                    name="email"
-                    className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
+                        type="email"
+                        id="email"
+                        placeholder="Your Email ..."
+                        name="email"
+                        className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
                     />npm
                     <textarea
-                    name="textarea"
-                    id="textarea"
-                    cols="30"
-                    rows="4"
-                    placeholder="Your Message ..."
-                    className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
+                        name="message"
+                        id="textarea"
+                        cols="30"
+                        rows="4"
+                        placeholder="Your Message ..."
+                        className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
                     />
                     <button
-                    type="submit"
-                    className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color"
+                        type="submit"
+                        className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color"
                     >
-                    Send Message
+                        Send Message
                     </button>
                 </form>
             </div>
