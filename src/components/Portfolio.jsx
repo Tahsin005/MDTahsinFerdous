@@ -5,6 +5,7 @@ import boipoka from "../assets/boi-poka.onrender.com_.png";
 import liftedlisted from "../assets/lifted-and-listed.netlify.app_.png";
 import fureverfriends from "../assets/fur-ever-friends-chi.vercel.app_index.html.png";
 import aroundtheworld from "../assets/aroundtheworldd.png"
+import taskly from "../assets/taskly1.png"
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 import "./Portfolio.css";
@@ -62,7 +63,7 @@ const projects = [
       site: "https://lifted-and-listed.netlify.app/",
       github: "https://github.com/Tahsin005/Lifted-Listed-Frontend",
     },
-    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST']
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST Framework', 'PostgreSQL']
 
   },
   {
@@ -74,7 +75,19 @@ const projects = [
       site: "https://fur-ever-friends-chi.vercel.app/index.html",
       github: "https://github.com/Tahsin005/Fur_ever_friends",
     },
-    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST']
+    technologies: ['HTML', 'CSS', 'Tailwind CSS', 'Python', 'Django REST Framework', 'PostgreSQL']
+
+  },
+  {
+    img: taskly,
+    title: "Taskly",
+    description:
+      "Taskly allows users to add, edit, and delete tasks, helping them stay organized and productive.",
+    links: {
+      site: "https://taskly-blue.vercel.app/",
+      github: "https://github.com/Tahsin005/Taskly-Frontend",
+    },
+    technologies: ['JSX', 'CSS', 'Tailwind CSS', 'React.js', 'Django REST Framework', 'PostgreSQL']
 
   },
   {
